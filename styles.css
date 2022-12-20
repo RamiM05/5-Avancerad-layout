@@ -1,0 +1,108 @@
+/*https://coolors.co/463730-1f5673-759fbc-90c3c8-b9b8d3*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.container {
+    background-color: #90C3C8;
+    margin: 0 auto;
+    width: 80vw;
+    max-width: 1200px;
+}
+
+header {
+    background-color: #1F5673;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3px;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+
+}
+
+header nav a {
+    text-decoration: none;
+    color: #463730;
+    background-color: #90C3C8;
+    border-radius: 20px;
+    padding: 5px 10px;
+    text-align: center;
+
+}
+
+header nav a:hover {
+    color: #000;
+    background-color: #759FBC;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px auto;
+    width: 80%;
+}
+
+footer {
+    background-color: #1F5673;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+@media (min-width:600px) {
+    header nav {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    main {
+        display: flex;
+        gap: 70px;
+        margin: 0 30px;
+    }
+
+}
+
+/* Form */
+
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+}
+
+.send-button-container {
+    margin: 0 auto;
+}
+
+/* .send-button-container input {
+    width: 30%;
+    min-width: 100px;
+} */
+
+label {
+    display: flex;
+    padding-bottom: 7px;
+}
+
+@media (min-width:600px) {
+    form {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .send-button-container {
+        grid-column: span 2;
+    }
+}
